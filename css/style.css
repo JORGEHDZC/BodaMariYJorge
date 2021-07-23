@@ -1402,8 +1402,10 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
 .attending_area {
-  padding-top: 95px;
-  padding-bottom: 280px;
+  padding: 0 10px;
+  padding-top: 350px;
+  padding-bottom: 50px;
+  margin-top: 150px;
 }
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
@@ -1868,7 +1870,8 @@ h3 {
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area {
   padding: 0 50px;
-  top: 350px;
+  top: 300px;
+  bottom: 30px;
   position: relative;
 }
 
