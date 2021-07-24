@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -177,8 +179,8 @@
     </div>
     <!--/ program_details -->
 
-     <!-- Map info -->
-     <section class="location_area">
+    <!-- Map info -->
+    <section class="location_area">
         <div class="location_info">
             <div class="location_inner">
                 <div class="location_top text-center">
@@ -188,7 +190,8 @@
                     <p>Calle Embarcadero #23, Barrio Xochiténco, Chimalhuacán, C.P. 56334, Estado de México<br>
                         <span>5560028531</span>
                     </p>
-                    <a class="boxed_btn3_1" href="https://goo.gl/maps/DN4MaLauUimAp5UU7" role="button">Mapa del Sitio</a>
+                    <a class="boxed_btn3_1" href="https://goo.gl/maps/DN4MaLauUimAp5UU7" role="button">Mapa del
+                        Sitio</a>
                 </div>
             </div>
         </div>
@@ -216,16 +219,16 @@
                                             <h3>¿Nos acompañas?</h3>
                                             <p>Por favor confirma antes del 20 de Noviembre</p>
                                         </div>
-                                        <form action="#">
+                                        <form id="add-mensaje">
                                             <div class="row">
                                                 <div class="col-xl-12">
-                                                    <input type="text" placeholder="Nombre y Apellido">
+                                                    <input type="text" placeholder="Nombre y Apellido" name="name">
                                                 </div>
                                                 <div class="col-xl-12">
-                                                    <input type="text" placeholder="Email">
+                                                    <input type="text" placeholder="Email" name="email">
                                                 </div>
                                                 <div class="col-xl-12">
-                                                    <textarea placeholder="Mensaje Adicional"></textarea>
+                                                    <textarea placeholder="Mensaje Adicional" name="message"></textarea>
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <button type="submit" class="boxed_btn3">¡Asistiré!</button>
@@ -243,7 +246,7 @@
     </div>
     <!-- / attend_area -->
 
-   
+
 
 
     <!-- footer_start -->
@@ -297,6 +300,7 @@
     </footer>
     <!-- footer_end -->
 
+   
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -334,7 +338,21 @@
             ));
         });
     </script>
-
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCH-Na7n4beCccWlcWRoACdtCWGr0AEUH8",
+            authDomain: "bodamarijorge-c06e0.firebaseapp.com",
+            projectId: "bodamarijorge-c06e0",
+            storageBucket: "bodamarijorge-c06e0.appspot.com",
+            messagingSenderId: "37521342938",
+            appId: "1:37521342938:web:9714cb75d6119a13fd80e3"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="js/app.js"></script>
 
 </body>
 
