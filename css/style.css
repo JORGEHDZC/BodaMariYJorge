@@ -1951,6 +1951,18 @@ h3 {
   color: #C78665;
 }
 
+.mensajes{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.btn-link {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
 /* line 43, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area .location_info .location_inner p {
   color: #727272;
