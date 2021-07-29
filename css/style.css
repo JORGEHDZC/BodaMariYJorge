@@ -406,8 +406,9 @@ h3 {
 
 .boxed_btn3_1 {
   background: #C78665;
-  padding: 9px 26px;
+  padding: 20px 26px;
   margin-bottom: 0;
+  margin-top:20px;
   font-size: 20px;
   font-family: "Muli", sans-serif;
   color: #fff;
@@ -417,6 +418,8 @@ h3 {
   transition: 0.5s;
   display: inline-block;
 }
+
+
 
 /* line 54, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_btn.scss */
 .boxed_btn3:hover {
@@ -996,6 +999,9 @@ h3 {
 }
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
+.slider_bg_1 {
+  background-image: url(../img/banner/banner.png);
+}
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_bg_2 {
@@ -1004,25 +1010,31 @@ h3 {
 
 /* line 7, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area {
-  /* The image used */
-  background-image: url("../img/banner/15.webp");
-
-  /* Half height */
+  background-image: url(../img/banner/15.webp);
   height: 50%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.99;
 }
 
+@media (max-width: 767px) {
+  
+  .slider_area {
+    padding: 0 20px;
+  }
+}
+
 /* line 14, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner {
-  height: 300px;
-  width: 250px;
-  background-position: center;
+  height: 800px;
+  position: relative;
+  z-index: 8;
+  position: relative;
+  z-index: 8;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 
@@ -1038,9 +1050,7 @@ h3 {
   -moz-border-radius: 50%;
   border-radius: 50%;
   z-index: 10;
- 
 }
-
 
 @media (max-width: 767px) {
   /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
@@ -1125,7 +1135,7 @@ h3 {
 
 /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text h3 {
-  font-size: 36px;
+  font-size: 40px;
   font-family: "Petit Formal Script", cursive;
   font-weight: 400;
   color: #fff;
@@ -1137,7 +1147,7 @@ h3 {
 @media (max-width: 767px) {
   /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
   .slider_area_inner .slider_text h3 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
     color: #fff;
     line-height: 30px;
@@ -1149,7 +1159,7 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
   .slider_area_inner .slider_text h3 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
     color: #fff;
     line-height: 30px;
@@ -1160,11 +1170,13 @@ h3 {
 
 /* line 138, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text span {
-  font-size: 18px;
-  font-family: "Petit Formal Script", cursive;
+  font-size: 20px;
+  font-family: "Muli", sans-serif;
   font-weight: 400;
   color: #fff;
 }
+
+
 
 /* line 144, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text:before {
@@ -1325,7 +1337,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
 .program_bg_1 {
-  background-image: url(../img/banner/3.png);
+  background-image: url(../img/program_details/1.png);
 }
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1384,8 +1396,8 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
 .attending_area {
-  padding-top: 130px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
@@ -1411,7 +1423,7 @@ h3 {
   /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
   .attending_area {
     padding-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 }
 
@@ -1426,7 +1438,13 @@ h3 {
 /* line 21, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
 .attending_area .main_attending_area {
   position: relative;
+  padding-bottom: 200px;
   z-index: 9;
+}
+
+#formAttending {
+  top:150px;
+  margin-bottom:200px;
 }
 
 /* line 25, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
@@ -1611,7 +1629,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_story.scss */
 .love_story_area {
-  padding-top: 75px;
+  padding-top: 310px;
   padding-bottom: 30px;
 }
 
@@ -1764,7 +1782,6 @@ h3 {
   display: none;
 }
 
-/* line 61, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
 .gallery_imag_1 {
   background-image: url(../img/banner/01.webp);
 }
@@ -1853,7 +1870,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area {
-  padding: 0 50px;
+  padding: 0 50x;
   position: relative;
 }
 
@@ -1865,14 +1882,15 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
   .location_area #map {
-    height: 500px;
+    height: 600px;
   }
 }
 
 /* line 10, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area .location_info {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top:0px;
   left: 50%;
   bottom: 0;
   z-index: 9;
@@ -1897,17 +1915,15 @@ h3 {
 /* line 24, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
 .location_area .location_info .location_inner {
   background: #fff;
-  width: 616px;
-  max-width: 616px;
-  padding: 54px 60px 54px 60px;
+  margin-top:200px;
+ 
 }
 
 @media (max-width: 767px) {
   /* line 24, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
   .location_area .location_info .location_inner {
-    padding: 20px;
-    width: 100%;
-    bottom: 0;
+    background: #fff;
+    margin-top:20px;
   }
 }
 
@@ -1921,18 +1937,6 @@ h3 {
   font-size: 36px;
   font-weight: 400;
   color: #C78665;
-}
-
-.mensajes{
-  font-size: 15px;
-  font-weight: 400;
-  font-family: sans-serif;
-}
-
-.btn-link {
-  font-size: 15px;
-  font-weight: 400;
-  font-family: sans-serif;
 }
 
 /* line 43, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_location.scss */
@@ -5283,3 +5287,5 @@ h6 {
   margin-right: 10px;
   font-size: 12px;
 }
+
+/*# sourceMappingURL=style.css.map */
