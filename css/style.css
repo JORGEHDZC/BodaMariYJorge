@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,600i,700,700i,800,800i,900|Petit+Formal+Script&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,600i,700,700i,800,800i,900|Petit+Formal+Script&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 /* line 1, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_extend.scss */
 .flex-center-start {
   display: -webkit-box;
@@ -14,6 +16,20 @@
   justify-content: start;
 }
 
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba{
+  display:none;
+  background-repeat:no-repeat;
+  font-size:20px;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+}
+
+
+
 /* Normal desktop :1200px. */
 /* Normal desktop :992px. */
 /* Tablet desktop :768px. */
@@ -22,11 +38,34 @@
 /* 1. Theme default css */
 /* line 4, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/theme-default.scss */
 body {
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Great Vibes', cursive;
   font-weight: normal;
   font-style: normal;
   overflow-x: hidden;
 }
+
+#time{
+  font-family: 'Poppins';
+}
+
+
+#banner_sm{
+  font-size:28px;
+}
+
+#banner_md{
+  font-size:60px;
+}
+
+#banner_lg{
+  font-size:60px;
+}
+
+#banner_xl{
+  font-size:60px;
+}
+
+
 
 /* line 15, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/theme-default.scss */
 .img {
@@ -76,7 +115,7 @@ button {
 
 /* line 44, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Great Vibes', cursive;
   color: #1F1F1F;
 }
 
@@ -108,7 +147,7 @@ p {
   line-height: 28px;
   color: #727272;
   margin-bottom: 13px;
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Great Vibes', cursive;
 }
 
 /* line 73, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/theme-default.scss */
@@ -473,7 +512,7 @@ h3 {
   color: #fff;
   display: inline-block;
   padding: 15px 44px;
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Great Vibes', cursive;
   font-size: 16px;
   font-weight: 600;
   border: 0;
@@ -1089,6 +1128,7 @@ h3 {
   }
 }
 
+
 @media (min-width: 992px) and (max-width: 1200px) {
   /* line 37, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
   .slider_area_inner .slider_text {
@@ -1137,7 +1177,7 @@ h3 {
 /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area_inner .slider_text h3 {
   font-size: 40px;
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
   color: #fff;
   line-height: 46px;
@@ -1157,10 +1197,34 @@ h3 {
   }
 }
 
+@media (min-width: 1000px) {
+  /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
+  .slider_area_inner .slider_text h3 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
   .slider_area_inner .slider_text h3 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 700px) {
+  /* line 113, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
+  .slider_area_inner .slider_text h3 {
+    font-size: 40px;
     font-weight: 400;
     color: #fff;
     line-height: 30px;
@@ -1315,11 +1379,11 @@ h3 {
 
 /* line 39, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_wedding_counter.scss */
 .weeding_countdown_area .countdown_area .countdown_wrap .single_countdown h3 {
-  font-size: 60px;
-  font-family: "Petit Formal Script", cursive;
+  font-size: 100px;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
   color: #C78665;
-  margin-bottom: 17px;
+  margin-bottom: 1px;
 }
 
 @media (max-width: 767px) {
@@ -1383,7 +1447,7 @@ h3 {
 .program_details_area .single_program .program_inner span {
   font-size: 20px;
   font-weight: 400;
-  font-family: "Petit Formal Script", cursive;
+  font-family: 'Great Vibes', cursive;
 }
 
 /* line 27, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_program.scss */
@@ -1470,6 +1534,9 @@ h3 {
 #link{
   font-family: 'Poppins';
 }
+
+
+
 
 /* line 30, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_attending.scss */
 .attending_area .main_attending_area .flower_2 {
@@ -1873,7 +1940,7 @@ h3 {
 /* line 80, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
 .gallery_area .grid-item {
   overflow: hidden;
-  padding: 4px !important;
+  padding: 2px;
 }
 
 /* line 84, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */

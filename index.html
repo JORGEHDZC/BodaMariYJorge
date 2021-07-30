@@ -28,10 +28,19 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head>
 
 <body>
+
+    <!-- Boton hacia arriba -->
+    <a class="ir-arriba" javascript:void(0) title="Volver arriba">
+        <span class="fa-stack">
+            <i id="flecha" class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
 
     <!-- header-->
     <header>
@@ -39,10 +48,16 @@
             <div id="sticky-header" class="main-header-area">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-xl-3 col-lg-3">
+                        <div class="col-xs-12">
                             <div class="logo-img">
                                 <a href="index.html">
-                                    <h1>Nuestra Boda</h1>
+                                    <span id="banner_sm" class="d-block d-sm-none d-none d-sm-block d-md-none">Nuestra
+                                        Boda: Mari & Jorge</span>
+                                    <span id="banner_md" class="d-none d-md-block d-lg-none">Nuestra Boda: Mari &
+                                        Jorge</span>
+                                    <span id="banner_lg" class="d-none d-lg-block d-xl-none">Nuestra Boda: Mari &
+                                        Jorge</span>
+                                    <span id="banner_xl" class="d-none d-xl-block">Nuestra Boda: Mari & Jorge</span>
                                 </a>
                             </div>
                         </div>
@@ -173,7 +188,7 @@
     <!-- Time line -->
 
     <!-- Event details -->
-   
+
     <section class="location_area">
         <div class="section_title text-center">
             <img src="img/banner/flowers.png" alt="">
@@ -214,7 +229,11 @@
                         </div>
                         <span>Novia</span>
                         <h3>Mari Ventura Escobar</h3>
-                        <p id="shortbio">Un poco sobre mi: Tengo 27 años y soy del Estado de México, actualmente estoy estudiando la Lic. en Química; me gusta las mandarinas y el color azul, veo peliculas de romance y juego videojuegos retro, me encantan los mariscos y los waffles y amo las tardes lluviosas con un capuccino y explorar bosques por su naturaleza, además me gusta cocinar con mi futuro esposo.</p>
+                        <p id="shortbio">Un poco sobre mi: Tengo 27 años, actualmente estoy estudiando la Lic. en
+                            Química; Me gustan las mandarinas y mi color favorito es el azul, me encantan las películas
+                            de romance y juego videojuegos retro, adoro los mariscos y los waffles, amo las tardes
+                            lluviosas con un capuccino y explorar bosques por su naturaleza, y me gusta cocinar con mi
+                            futuro esposo.</p>
                         <div class="social_links">
                             <ul>
                                 <li><a href="https://www.facebook.com/mari.ventura.908"> <i class="fab fa-facebook"></i>
@@ -236,9 +255,11 @@
                         </div>
                         <div class="single_time_line">
                             <h3>Primera Cita</h3>
-                            <p>Fuerón al cine y luego al "Párque Ecológico de Loreto y Peña Pobre" dónde Jorge pasó su
-                                infancia, se dieron cuenta que podían darse una oportunidad y terminaron besandose justo
-                                en el parque.</p>
+                            <p>Fuerón al cine y luego al "Párque Ecológico de Loreto y Peña Pobre" dónde Jorge pasó
+                                parte de su
+                                infancia; Se dieron cuenta que podían darse una oportunidad y !hasta hubo besos antes y
+                                justo
+                                en el parque!</p>
                         </div>
                         <div class="single_time_line">
                             <h3>En una relación</h3>
@@ -251,7 +272,7 @@
                             <h3>Propuesta de matrimonio</h3>
                             <p>Pasaron casi 3 años de relación y llegó el día: Jorge le propuso matrimonio a Mari un
                                 <strong>2 de Mayo del 2021</strong>, en el mismo lugar dónde todo empezó, en el "Párque
-                                Ecólógico de Loreto y Peña Pobre".
+                                Ecológico de Loreto y Peña Pobre".
                             </p>
                         </div>
                     </div>
@@ -263,7 +284,12 @@
                         </div>
                         <span>Novio</span>
                         <h3 id="jorgeTitle">Jorge Tonameyotzin Hernández Castellanos</h3>
-                        <p id="shortbio">Un poco sobre mi: Tengo 29 años y soy egresado de la Lic. en Computación y me encanta todas las cosas tecnológicas, puedo jugar videojuegos horas y horas, y disfruto de aprender cosas nuevas cuando puedo, como idiomas u tutoriales, además me gusta cocinar y bailar salsa, me gusta practicar fronton y fútbol</p>
+                        <p id="shortbio">Un poco sobre mi: Tengo 29 años y soy egresado de la Lic. en Computación y me
+                            encanta todas las cosas tecnológicas; Puedo jugar videojuegos literalmente horas, y disfruto
+                            de aprender cosas nuevas cuando puedo, además mis recreaciones son cocinar y bailar salsa;
+                            Me
+                            encanta cualquier platillo con queso y disfruto mucho platicar y compartir cosas
+                            interesantes con mi futura esposa.</p>
                         <div class="social_links">
                             <ul>
                                 <li><a href="https://www.facebook.com/jorgetonameyotzin"> <i
@@ -288,89 +314,92 @@
                     <div class="section_title text-center">
                         <img src="img/banner/flowers.png" alt="">
                         <h3>Galería de Fotos</h3>
+                        <p id="link">Toma todas las fotos que quieras durante la boda y por favor etiquétanos bajo el
+                            hashtag:</p>
+                        <span class="hashtag">#BodaMariYJorge2021</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container-fluid p-0">
             <div class="row grid no-gutters">
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_1">
                         <a class="popup-image" href="img/banner/01.webp">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_3">
                         <a class="popup-image" href="img/banner/03.webp">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_4">
                         <a class="popup-image" href="img/banner/04.webp">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_5">
                         <a class="popup-image" href="img/banner/05.webp">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_6">
                         <a class="popup-image" href="img/banner/06.webp">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_8">
                         <a class="popup-image" href="img/banner/08.webp">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_9">
                         <a class="popup-image" href="img/banner/09.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_10">
                         <a class="popup-image" href="img/banner/10.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_11">
                         <a class="popup-image" href="img/banner/11.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_12">
                         <a class="popup-image" href="img/banner/12.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_13">
                         <a class="popup-image" href="img/banner/13.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_14">
                         <a class="popup-image" href="img/banner/14.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_15">
                         <a class="popup-image" href="img/banner/15.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_16">
                         <a class="popup-image" href="img/banner/16.webp"></a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 grid-item">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-6 grid-item">
                     <div class="single_gallery gallery_imag_17">
                         <a class="popup-image" href="img/banner/17.webp"></a>
                     </div>
@@ -399,7 +428,9 @@
                                         <div class="form_heading text-center">
                                             <h3>¿Nos acompañas?</h3>
                                             <p>Por favor confirma antes del 20 de Noviembre</p>
-                                            <p>Confirma el número de invitados de acuerdo a los boletos que te entregaron con esta invitación digital en la sección de "Mensaje Adicional" y, de paso, un mensaje que salga de tu corazón...</p>
+                                            <p>Confirma el número de invitados de acuerdo a los boletos que te
+                                                entregaron con esta invitación digital en la sección de "Mensaje
+                                                Adicional"</p>
                                         </div>
                                         <form id="add-mensaje">
                                             <div class="row">
@@ -411,7 +442,8 @@
                                                     <input type="email" placeholder="Email" name="email" required>
                                                 </div>
                                                 <div class="col-xl-12">
-                                                    <textarea placeholder="Mensaje Adicional" name="message" required></textarea>
+                                                    <textarea placeholder="Mensaje Adicional" name="message"
+                                                        required></textarea>
                                                 </div>
                                                 <div class="col-xl-12">
                                                     <button type="submit" class="boxed_btn3">¡Asistiré!</button>
@@ -497,7 +529,7 @@
     <script>
         $('#clock').countdown('2021/12/11', function (event) {
             $(this).html(event.strftime(
-                '<div class="countdown_wrap d-flex"><div  class="single_countdown"><h3>%D</h3><span>Dias</span></div><div class="single_countdown"><h3>%H</h3><span>Horas</span></div><div class="single_countdown"><h3>%M</h3><span>Minutos</span></div><div class="single_countdown"><h3>%S</h3><span>Segundos</span></div></div>'
+                '<div class="countdown_wrap d-flex"><div  class="single_countdown"><h3>%D</h3><span id=\"time\">Días</span></div><div class="single_countdown"><h3>%H</h3><span id=\"time\">Horas</span></div><div class="single_countdown"><h3>%M</h3><span id=\"time\">Minutos</span></div><div class="single_countdown"><h3>%S</h3><span id=\"time\">Segundos</span></div></div>'
             ));
         });
     </script>
@@ -533,6 +565,18 @@
                 tError: '<a href="%url%">El contenido</a> no pudo ser cargado.' // Error message when ajax request failed
             }
         });
+    </script>
+
+    <script>
+        $(document).ready(function () { irArriba(); }); //Hacia arriba
+
+        function irArriba() {
+            $('.ir-arriba').click(function () { $('body,html').animate({ scrollTop: '0px' }, 1000); });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) { $('.ir-arriba').slideDown(600); } else { $('.ir-arriba').slideUp(600); }
+            });
+            $('.ir-abajo').click(function () { $('body,html').animate({ scrollTop: '1000px' }, 1000); });
+        }
     </script>
 
 
