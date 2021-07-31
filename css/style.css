@@ -1939,8 +1939,9 @@ h3 {
 
 /* line 80, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
 .gallery_area .grid-item {
-  overflow: hidden;
-  padding: 2px;
+  overflow: hidden !important;
+  border: 5px solid #FFF;
+  cursor: pointer;
 }
 
 /* line 84, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
