@@ -1050,7 +1050,7 @@ h3 {
 
 /* line 7, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area {
-  background-image: url(../img/banner/15.webp);
+  background-image: url(../img/banner/16.webp);
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1870,6 +1870,9 @@ h3 {
   background-image: url(../img/banner/01.webp);
 }
 
+.gallery_imag_2 {
+  background-image: url(../img/banner/02.webp);
+}
 .gallery_imag_3 {
   background-image: url(../img/banner/03.webp);
 }
@@ -1879,10 +1882,13 @@ h3 {
 .gallery_imag_5 {
   background-image: url(../img/banner/05.webp);
 }
+
 .gallery_imag_6 {
   background-image: url(../img/banner/06.webp);
 }
-
+.gallery_imag_7 {
+  background-image: url(../img/banner/07.webp);
+}
 .gallery_imag_8 {
   background-image: url(../img/banner/08.webp);
 }
@@ -1906,12 +1912,6 @@ h3 {
 }
 .gallery_imag_15 {
   background-image: url(../img/banner/15.webp);
-}
-.gallery_imag_16 {
-  background-image: url(../img/banner/16.webp);
-}
-.gallery_imag_17 {
-  background-image: url(../img/banner/17.webp);
 }
 
 /* line 65, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_gallery.scss */
